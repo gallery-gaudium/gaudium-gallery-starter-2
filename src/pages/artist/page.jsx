@@ -207,7 +207,7 @@ export default function Artist() {
               2025.10 Group Exhibition
             </h3>
             <p className="text-ink/80">
-              타이미, 박정현, 조유진, 최희주, 윤지선, 김은진, 김란수, 이수연, 안형준
+              박정현, 조유진, 최희주, 윤지선, 김은진, 김란수, 타이미, 이수연, 안형준
             </p>
           </div>
 
