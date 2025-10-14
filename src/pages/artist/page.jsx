@@ -221,16 +221,6 @@ export default function Artist() {
             </p>
           </div>
 
-
-          {/* 서울아트쇼 */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-purple-700">
-              2025.12 Seoul Art Show
-            </h3>
-            <p className="text-ink/80">
-              이하,타이미, 오지우, 김성우, 윤주휘, 오현정, 박은정, 김지향, 신승혜, 이채목, 장도경, 김상현, 강채화, 박가람, Cecil Kim
-            </p>
-          </div>
         </div>
       </div>
     </section>

@@ -31,13 +31,7 @@ const UPCOMING_EXHIBITIONS = [
     dates: "Dec. 2025",
     body: "이하작가의 ‘이방인과 여행자’ 시리즈외 다수의 신작들이 선보일 예정입니다.",
   },
-  {
-    id: "2025-Group-12",
-    title: "Gaudium Prelude",
-    dates: "Dec. 2025",
-    body:
-      "이하, 타이미, 오지우, 김성우, 윤주휘 강채화, 김상현, 김지향, 박기람, 박은경, 신승혜, 오현정, 이채묵, 장도경, Cecil Kim",
-  },
+  
 ];
 
 /* Past는 국제갤러리 스타일: 카드 → 클릭 시 모달(Introduction/Photos 탭) */
