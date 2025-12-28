@@ -71,11 +71,8 @@ export default function Home() {
     "2024.10 : 구지희 개인전",
     "2025.01 : 정하경 초대전",
     "2025.03 : 그양 초대전",
-    "2025.04 : 이하 초대전",
-    "2025.05~12 : 갤러리 기획 그룹전, 9인9색전",
-    "2025.07 : 제주국제아트페어", 
-    "2025.12(예정) : 이하 개인전",
-    "2025.12(예정) : 서울아트쇼, COEX",
+    "2025.05~12 : 갤러리 기획 그룹전, 9인9색전", 
+    "2025.12.24-12.28 : 서울아트쇼, COEX",
   ];
   const [showAll, setShowAll] = useState(false);
   const visibleHistory = showAll ? historyItems : historyItems.slice(0, 7);
