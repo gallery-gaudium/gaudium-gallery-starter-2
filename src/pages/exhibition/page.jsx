@@ -4,34 +4,9 @@ import React, { useState, useEffect, useRef } from "react";
 /* ===============================
    데이터 (요청하신 CURRENT/UPCOMING 그대로 반영)
    =============================== */
-const CURRENT_EXHIBITIONS = [
-  {
-    id: "2025-solo-Leeh",
-    title: "바다가 길을 알려줄거야 · Lee Haa",
-    subtitle: "Group Exhibition",
-    dates: "Sep. 04 〜 Sep. 08, 2025",
-    location: "Gallery GAUDIUM, Seoul",
-    poster: "/images/exhibitions/current/poster.jpg", // 포스터 1장
-    photos: [
-      "/images/exhibitions/current/scene_1.jpg",
-      "/images/exhibitions/current/scene_2.jpg",
-      "/images/exhibitions/current/scene_3.jpg",
-      "/images/exhibitions/current/scene_4.jpg",
-      "/images/exhibitions/current/scene_5.jpg",
-    ],
-    description:
-      "바다가 길을 알려줄거야 온라인 전시에 이어 오프라인전시가 갤러리 가우디움에서 연결됩니다.",
-  },
-];
+const CURRENT_EXHIBITIONS = [];
 
 const UPCOMING_EXHIBITIONS = [
-  {
-    id: "2025-solo-12",
-    title: "Lee Haa Solo Exhibition",
-    dates: "Dec. 2025",
-    body: "이하작가의 ‘이방인과 여행자’ 시리즈외 다수의 신작들이 선보일 예정입니다.",
-  },
-  
 ];
 
 /* Past는 국제갤러리 스타일: 카드 → 클릭 시 모달(Introduction/Photos 탭) */
