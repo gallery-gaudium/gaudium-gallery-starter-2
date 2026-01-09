@@ -1,38 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 export default function Artist() {
-  // 대표작 슬라이드 이미지들
-  const slides = [
-    "/images/leehaa_1.jpg",
-    "/images/leehaa_2.jpg",
-    "/images/leehaa_3.jpg",
-    "/images/leehaa_4.jpg",
-    "/images/leehaa_5.jpg",
-  ];
-
-  const [i, setI] = useState(0);
-  const timerRef = useRef(null);
-
-  const go = (dir) => {
-    setI((prev) => (prev + dir + slides.length) % slides.length);
-  };
-
-  // 자동재생 (5초)
-  useEffect(() => {
-    timerRef.current = setInterval(() => {
-      setI((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(timerRef.current);
-  }, [slides.length]);
-
-  // 사용자 조작시 자동재생 리셋
-  const poke = () => {
-    if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(() => {
-      setI((prev) => (prev + 1) % slides.length);
-    }, 5000);
-  };
-
   return (
     <section className="bg-white">
       {/* ===== Artist 헤더 ===== */}
@@ -42,120 +10,13 @@ export default function Artist() {
         </h1>
 
         <nav className="mt-3 flex items-center gap-4 text-sm md:text-base text-neutral-600">
-          {/* 앵커로 두 섹션으로 스크롤 이동하고 싶으면 href를 #exclusive / #projects 로 유지 */}
-          <a href="#exclusive" className="font-medium hover:text-neutral-900">
-            Exclusive Artists
-          </a>
-          <span className="h-3 w-px bg-neutral-300" />
-          <a href="#projects" className="hover:text-neutral-900">
+          <a href="#projects" className="font-medium hover:text-neutral-900">
             Projects With
           </a>
         </nav>
       </header>
 
       <div className="max-w-6xl mx-auto px-6 pb-16 md:pb-20">
-        {/* ===== Exclusive Artist ===== */}
-        <section id="exclusive">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink mb-8 text-center">
-            Exclusive Artist
-          </h2>
-
-          {/* 좌: 작가카드 / 우: 대표작 슬라이드 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start mb-16">
-            {/* 작가 카드 */}
-            <div className="justify-self-center md:justify-self-start w-full max-w-sm">
-              <div className="overflow-hidden rounded-xl border border-line mb-3">
-                <img
-                  src="/images/leehaa_portrait.jpg"
-                  alt="Lee Haa"
-                  className="w-full h-64 object-cover"
-                />
-              </div>
-              <h4 className="text-lg font-semibold text-ink">Lee Haa</h4>
-            </div>
-
-            {/* 대표작 슬라이드 */}
-            <div className="w-full">
-              <div className="relative overflow-hidden rounded-xl border border-line shadow-sm">
-                {/* 슬라이드 트랙 */}
-                <div
-                  className="flex transition-transform duration-500 ease-out"
-                  style={{ transform: `translateX(-${i * 100}%)` }}
-                >
-                  {slides.map((src, idx) => (
-                    <div key={idx} className="min-w-full">
-                      <img
-                        src={src}
-                        alt={`Lee Haa Work ${idx + 1}`}
-                        className="w-full h-[360px] md:h-[420px] object-cover"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
-
-                {/* 좌우 버튼 */}
-                <button
-                  onClick={() => {
-                    go(-1);
-                    poke();
-                  }}
-                  aria-label="Previous"
-                  className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white shadow p-2"
-                  type="button"
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M15 18l-6-6 6-6"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </button>
-                <button
-                  onClick={() => {
-                    go(1);
-                    poke();
-                  }}
-                  aria-label="Next"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white shadow p-2"
-                  type="button"
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M9 6l6 6-6 6"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </button>
-
-                {/* 도트 인디케이터 */}
-                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                  {slides.map((_, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => {
-                        setI(idx);
-                        poke();
-                      }}
-                      className={`h-2.5 w-2.5 rounded-full transition ${
-                        i === idx ? "bg-purple-700" : "bg-neutral-300"
-                      }`}
-                      aria-label={`Go to slide ${idx + 1}`}
-                      type="button"
-                    />
-                  ))}
-                </div>
-              </div>
-
-              <p className="mt-3 text-sm text-soft">
-                * 대표작 5점 – 자동재생(5초), 클릭으로 이동 가능
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ===== Projects With ===== */}
         <section id="projects">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink mb-10 text-center">
