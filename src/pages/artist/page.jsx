@@ -86,6 +86,78 @@ export default function Artist() {
                 오지우, 백희경, 고희진, 양경혜, 김정은, 문혜영, 함효린, 김은재, 김경원
               </p>
             </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2025.12 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+                FlaYoon, 김경희, 조수연, 김잔디, 이하루, 이팝, 김지현, 오그림, 구지희
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.01 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+                Moonjar, 김보연, 김민, 권예주, 박가람, 안세희, 윤그림, 정지은, 릴로
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.01 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+                Moonjar, 김보연, 김민, 권예주, 박가람, 안세희, 윤그림, 정지은, 릴로
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.01 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+                Moonjar, 김보연, 김민, 권예주, 박가람, 안세희, 윤그림, 정지은, 릴로
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.02 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+                윤교, 전창석, 김희찬, 한혜선, 선, 윤은이, 신해달, 이서진, 남보라
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.03 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+                박가람, 김지향, 박은정, 오현정, 신승혜, 강채화, 박지원, 롱혼, 윤주휘
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.04 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+               문수정, 류형원, 김희선, 안성인, 훈어, 구지희, 비비테, DANI, 오지우
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.05 Group Exhibition
+              </h3>
+              <p className="text-ink/80">
+                윤선희, 전유리, Saera Hwang, 정경화, 정유진, 김선정, 김수란, 강지연, 최현주
+              </p>
+            </div>
           </div>
         </section>
       </div>
