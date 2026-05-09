@@ -202,9 +202,28 @@ export default function ExhibitionPage() {
    Current — 포스터 + 슬라이드 + 설명
    =============================== */
 function CurrentList({ data = [] }) {
-  if (!data.length) {
-    return <EmptyState text="현재 진행 중인 전시가 없습니다." />;
-  }
+if (!data.length) {
+  return (
+    <div className="rounded-2xl border border-neutral-200 bg-white py-16 px-6 text-center">
+      <p className="text-lg md:text-xl font-medium text-neutral-700 mb-4">
+        현재 진행 중인 전시는 갤러리 가우디움 인스타그램에서 확인하실 수 있습니다.
+      </p>
+
+      <p className="text-sm md:text-base text-neutral-500 mb-8">
+        전시 소식과 현장 이미지는 Instagram을 통해 가장 빠르게 업데이트됩니다.
+      </p>
+
+      <a
+        href="https://www.instagram.com/gallery_gaudium/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-8 py-4 bg-black text-white rounded-full text-sm tracking-wide hover:opacity-80 transition"
+      >
+        Instagram 바로가기
+      </a>
+    </div>
+  );
+}
 
   return (
     <div className="space-y-16">
