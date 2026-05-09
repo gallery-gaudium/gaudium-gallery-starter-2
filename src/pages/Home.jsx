@@ -73,6 +73,8 @@ export default function Home() {
     "2025.03 : 그양 초대전",
     "2025.05~12 : 갤러리 기획 그룹전, 9인9색전", 
     "2025.12.24-12.28 : 서울아트쇼, COEX",
+    "2026.1-현재 : 매월 갤러리 기획 그룹전, 9인9색전 진행중",
+    "2026.4.30-5.3 : 뱅크아트페어, 학여울역, 세텍",
   ];
   const [showAll, setShowAll] = useState(false);
   const visibleHistory = showAll ? historyItems : historyItems.slice(0, 7);
