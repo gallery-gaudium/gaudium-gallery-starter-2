@@ -26,6 +26,15 @@ export default function Artist() {
           <div className="space-y-10">
             <div>
               <h3 className="text-xl font-semibold mb-2 text-purple-700">
+                2026.04 Bank Art Fair
+              </h3>
+              <p className="text-ink/80">
+                강채화, 권영심, 김희선, 남주희, 롱혼, 리미지미, 박가람, 박은정, 선, 선시연, 신승혜, 오지우, 임성자, 조유진
+              </p>
+            </div>
+
+             <div>
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">
                 2025.05 Group Exhibition
               </h3>
               <p className="text-ink/80">
