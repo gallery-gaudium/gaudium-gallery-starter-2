@@ -83,25 +83,7 @@ const PAST_EXHIBITIONS = [
       
     ],
   },
-    {
-    id: "2025-06-9colors",
-    title: "태동을 막지 마라",
-    period: "Apr 25 〜 Apr 30, 2025",
-    poster: "/images/exhibitions/past/250425.jpg",
-    intro: "이하작가 초대전",
-    photos: [
-      "/images/exhibitions/past/past_photo/250425/250425_1.jpg",
-      "/images/exhibitions/past/past_photo/250425/250425_2.jpg",
-      "/images/exhibitions/past/past_photo/250425/250425_3.jpg",
-      "/images/exhibitions/past/past_photo/250425/250425_4.jpg",
-      "/images/exhibitions/past/past_photo/250425/250425_5.jpg",
-       "/images/exhibitions/past/past_photo/250425/250425_6.jpg",
-       "/images/exhibitions/past/past_photo/250425/250425_7.jpg",
-     "/images/exhibitions/past/past_photo/250425/250425_8.jpg",
-     "/images/exhibitions/past/past_photo/250425/250425_9.jpg",
-     
-    ],
-  },
+  
     {
     id: "2025-06-9colors",
     title: "봄이 오는 속삭임",
