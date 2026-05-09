@@ -12,7 +12,7 @@ export default function CollectListPage() {
       </p>
 
       <a
-        href="https://smartstore.naver.com/tashart"
+        href="https://smartstore.naver.com/Gallery_gaudium"
         target="_blank"
         rel="noopener noreferrer"
         className="px-8 py-4 bg-black text-white rounded-full text-sm tracking-wide hover:opacity-80 transition"
