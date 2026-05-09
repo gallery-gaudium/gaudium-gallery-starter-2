@@ -23,6 +23,11 @@ export default function Artist() {
             Projects With
           </h2>
 
+<section className="mb-16">
+  <h3 className="text-xl font-semibold mb-6 border-b pb-3">
+    Art Fairs
+  </h3>
+
           <div className="space-y-10">
             <div>
               <h3 className="text-xl font-semibold mb-2 text-purple-700">
@@ -32,6 +37,10 @@ export default function Artist() {
                 강채화, 권영심, 김희선, 남주희, 롱혼, 리미지미, 박가람, 박은정, 선, 선시연, 신승혜, 오지우, 임성자, 조유진
               </p>
             </div>
+            <section>
+  <h3 className="text-xl font-semibold mb-6 border-b pb-3">
+    Group Exhibitions
+  </h3>
 
              <div>
               <h3 className="text-xl font-semibold mb-2 text-purple-700">
