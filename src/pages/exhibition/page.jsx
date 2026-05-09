@@ -352,8 +352,28 @@ function FadeCarousel({ images = [] }) {
    Upcoming — 텍스트 카드 리스트
    =============================== */
 function UpcomingList({ data = [] }) {
-  if (!data.length) return <EmptyState text="예정된 전시가 없습니다." />;
+  if (!data.length) {
+  return (
+    <div className="rounded-2xl border border-neutral-200 bg-white py-16 px-6 text-center">
+      <p className="text-lg md:text-xl font-medium text-neutral-700 mb-4">
+        예정된 전시는 네이버 플레이스 소식에서 확인하실 수 있습니다.
+      </p>
 
+      <p className="text-sm md:text-base text-neutral-500 mb-8">
+        전시 일정 및 오픈 예정 소식은 네이버 플레이스를 통해 업데이트됩니다.
+      </p>
+
+      <a
+        href="https://map.naver.com/p/entry/place/1144426722"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-8 py-4 bg-black text-white rounded-full text-sm tracking-wide hover:opacity-80 transition"
+      >
+        Naver Place 바로가기
+      </a>
+    </div>
+  );
+}
   return (
     <div className="space-y-6">
       {data.map((ex) => (
