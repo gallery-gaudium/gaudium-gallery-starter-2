@@ -33,14 +33,14 @@ export default function About() {
   };
 
   const historyItems = [
-    "2024.10 · Gallery Opening",
-    "2024.10 · Solo Exhibition: Koo Jee-Hee, <Everyday Miracles>",
-    "2025.04 · Invitational Exhibition: Lee Haa, <Don't Disturbe Me>",
-    "2025.05–12 · Gallery Project: 9인9색전 (group exhibition series)",
-    "2025.07 · Jeju International Art Fair",
-    "2025.12 (Planned) · Solo Exhibition: Lee Haa",
-    "2025.12 (Planned) · Gaudium Prelude",
-    "2025.12 (Planned) · Seoul Art Show, COEX",
+     "2024.10 : 갤러리 개관",
+    "2026.4.30-5.3 : 뱅크아트페어, 학여울역, 세텍",
+     "2026.1-현재 : 매월 갤러리 기획 그룹전, 9인9색전 진행중",
+      "2025.12.24-12.28 : 서울아트쇼, COEX",
+       "2025.05~12 : 갤러리 기획 그룹전, 9인9색전", 
+        "2025.03 : 그양 초대전",
+         "2025.01 : 정하경 초대전",
+    "2024.10 : 구지희 개인전",
   ];
 
   const programs = [
